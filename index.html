@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+fetch("https://5573a08b-0501-4679-8c43-7d7919e8eebe-00-8gsadkzqk9j7.pike.replit.dev/log", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    userAgent: navigator.userAgent,
+    language: navigator.language,
+    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone
+  })
+});
+</script>
     <meta charset="UTF-8">
     <title>My Simple Website</title>
     <style>
